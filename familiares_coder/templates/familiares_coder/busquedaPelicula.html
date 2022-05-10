@@ -1,0 +1,14 @@
+{%  extends "familiares_coder/padre.html" %}
+{% load static %}
+{%  block contenidoQueCambia%}
+    <form action="buscarPelicula/" method="GET">
+
+        <h1>Qué película querés buscar?</h1>
+        
+        <input type="text" name="nombre" id="nombre">
+        
+        <input type="submit", value="Buscar">
+
+    </form>
+
+{% endblock %}

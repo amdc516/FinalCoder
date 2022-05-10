@@ -1,0 +1,27 @@
+{%  extends "familiares_coder/padre.html" %}
+
+{% load static %}
+
+{%  block contenidoQueCambia%}
+
+    {% if miFormulario.errors %}
+
+    <p style="color: red;"> Están mal los datos, revisar</p>
+
+    {% endif %}
+        <h1>Llena el formulario y te contactaremos!</h1>
+        <form action="" method="POST">{% csrf_token %}
+
+            <table>
+
+                {{ miFormulario.as_table }}
+
+            </table>
+            
+            <input type="submit", value="Enviar">
+
+        </form>    
+
+
+
+{% endblock %}

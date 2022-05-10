@@ -1,0 +1,13 @@
+<p> Estamos buscando: {{nombre}} </p>
+
+{% if nombrePeliculas %}
+
+<ul>
+{% for pelicula in nombrePeliculas %}
+    <li> Fecha de estreno: {{pelicula.estreno}} </li>
+    <li> Género: {{pelicula.genero}} </li>
+{% endfor %}
+
+</ul>
+
+{% endif %}

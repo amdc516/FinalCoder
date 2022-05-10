@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mascotas_List</title>
+    </head>
+
+    <body>
+
+        <h1>Mascotas</h1>
+        <ul>
+            {% for mascota in object_list %}
+
+                <li>
+                    <p>NOMBRE: {{ mascota.nombre }}</p>
+                    <p>
+                        <a href="{% url 'Detail' mascota.id %}">Ver</a>
+                        <a href="{% url 'Edit' mascota.id %}">Editar</a>
+                        <a href="{% url 'Delete' mascota.id %}">Borrar</a>
+                    </p>
+                </li>
+            {% endfor %}
+            </ul>
+    
+    </body>
+</html>
+

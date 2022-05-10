@@ -1,0 +1,16 @@
+<body>
+    
+    {% for p in peliculas %}
+
+       <li> {{p}}  </li>
+       <button>
+        <a href="{% url 'EliminarPelicula' p.nombre %}">Eliminar</a>
+        <a href="{% url 'EditarPelicula' p.nombre %}">Editar</a>
+   </button>
+    
+    {% endfor %} 
+
+    <a href="peliculas"> Agregar otra película </a>
+
+
+</body>

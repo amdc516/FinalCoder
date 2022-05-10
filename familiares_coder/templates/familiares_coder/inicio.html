@@ -1,0 +1,11 @@
+{%  extends "familiares_coder/padre.html" %}
+{% load static %}
+{%  block contenidoQueCambia%}
+
+        <div class="text-center">
+            <img height="60px" src="{{ url }}">
+            <h1>Que bueno verte {{user.username}}</h1>
+            <a class="btn btn-primary" href="{% url 'EditarPerfil' %}">Editar Perfil</a>
+        </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{%  extends "familiares_coder/padre.html" %}
+{% load static %}
+{%  block contenidoQueCambia%}
+    <form action="buscarFamiliar/" method="GET">
+
+        <h1>¿Qué familiar querés buscar?</h1>
+
+        <input type="text" name="nombre" id="nombre">
+        
+        <input type="submit", value="Buscar">
+
+    </form>
+
+{% endblock %}

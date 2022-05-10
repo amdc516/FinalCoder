@@ -1,0 +1,16 @@
+<body>
+
+    {% for f in familiares %}
+
+       <li> {{f}}  </li>
+       <button>
+            <a href="{% url 'EliminarFamiliar' f.nombre %}">Eliminar</a>
+            <a href="{% url 'EditarFamiliar' f.nombre %}">Editar</a>
+       </button>
+
+    
+    {% endfor %} 
+
+    <a href="familiares">Agregar otro familiar</a>
+
+</body>

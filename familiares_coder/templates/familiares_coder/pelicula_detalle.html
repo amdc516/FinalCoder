@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Pelicula Detalle </title>
+    </head>
+
+    <body>
+
+        <p>Nombre de la pelicula: <i>{{ peliculafavorita.nombre }}</i></p>
+        <p>Genero: <i>{{ peliculafavorita.genero }}</i></p>
+        <p>Fecha de estreno: <i>{{ peliculafavorita.estreno }}</i></p>
+
+        <p>
+
+            <a href="{% url 'List2' %}">Regresar</a>
+        </p>
+    
+    
+    </body>
+</html>

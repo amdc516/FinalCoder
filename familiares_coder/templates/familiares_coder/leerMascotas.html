@@ -1,0 +1,16 @@
+<body>
+
+    {% for m in mascotas %}
+
+       <li> {{m}}  </li>
+       <button>
+            <a href="{% url 'EliminarMascota' m.nombre %}">Eliminar</a>
+            <a href="{% url 'EditarMascota' m.nombre %}">Editar</a>
+       </button>
+
+    
+    {% endfor %} 
+
+    <a href="mascotas">Agregar otra mascota</a>
+
+</body>
